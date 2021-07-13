@@ -1,0 +1,22 @@
+{
+  "name": "amenov.only",
+  "version": "1.0.0",
+  "description": "",
+  "main": "only.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amenov/onlyjs.git"
+  },
+  "author": "Amenov Abdulsalam <amenov.abdulsalam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amenov/onlyjs/issues"
+  },
+  "homepage": "https://github.com/amenov/onlyjs#readme",
+  "dependencies": {
+    "flat": "^5.0.2"
+  }
+}
