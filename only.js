@@ -30,7 +30,7 @@ module.exports = (object, ...keys) => {
     }
   }
 
-  const siftedBody = flat.unflatten(siftedFlatObject);
+  const siftedObject = flat.unflatten(siftedFlatObject);
 
-  return Object.keys(siftedBody).length ? siftedBody : null;
+  return Object.keys(siftedObject).length ? siftedObject : null;
 };
