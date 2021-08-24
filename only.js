@@ -1,14 +1,14 @@
-const flat = require('flat');
+const flat = require("flat");
 
 module.exports = (object, ...keys) => {
   if (Array.isArray(keys[0])) keys = keys[0];
 
-  const flatObject = flat.flatten(object);
+  const flatObject = flat.flatten(object, { safe: true });
   const flatKeys = [];
 
-  function flattenKeys(keys, prevKey = '') {
+  function flattenKeys(keys, prevKey = "") {
     for (const key of keys) {
-      if (typeof key === 'string') {
+      if (typeof key === "string") {
         flatKeys.push(prevKey ? `${prevKey}.${key}` : key);
       } else {
         for (const [_key, _keys] of Object.entries(key)) {
